@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
             <p className="text-white/30 text-[10px] tracking-[0.25em] uppercase mb-4">Stagione</p>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-2 h-2 bg-sardinia-accent rounded-full animate-pulse" />
-              <span className="text-white/60 text-xs">Maggio — Settembre</span>
+              <span className="text-white/60 text-xs">Febbraio — Novembre</span>
             </div>
             <div className="flex gap-5 pt-6 border-t border-white/8">
               <a href="#" className="text-white/25 text-xs tracking-wider hover:text-white/60 transition-colors">

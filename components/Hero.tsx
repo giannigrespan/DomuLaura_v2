@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
       {/* Floating info badges */}
       <div className="absolute top-1/3 right-10 z-20 hidden lg:flex flex-col gap-3 animate-fade-in" style={{ animationDelay: '0.8s' }}>
         {[
-          { icon: '☀️', title: 'Mag — Set', sub: 'Stagione aperta' },
+          { icon: '☀️', title: 'Feb — Nov', sub: 'Stagione aperta' },
           { icon: '📍', title: 'Torpè, Nuoro', sub: 'Sardegna Orientale' },
           { icon: '⭐', title: '5.0 / 5', sub: 'Ospiti soddisfatti' },
         ].map((b) => (

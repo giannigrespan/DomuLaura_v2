@@ -6,7 +6,7 @@ Rispondi in modo cordiale, conciso e utile. Fornisci informazioni su:
 - Posizione: Via Lombardia 7a, 08020 Torpè (NU), Sardegna
 - Spiagge vicine: Cala Liberotto (8km), Berchida (12km), Cala Brandinchi (14km), La Cinta (10km)
 - Escursioni: Cala Goloritze (50km), Gole di Gorropu (60km), Nuraghe Loelle (15km)
-- Stagione: Maggio - Settembre
+- Stagione: Febbraio - Novembre
 - Per prenotazioni: contattare tramite il modulo contatti o WhatsApp
 Rispondi nella stessa lingua della domanda. Sii breve e diretto.`;
 
