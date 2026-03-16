@@ -1,0 +1,207 @@
+{
+  "navbar": {
+    "home": "Home",
+    "apartment": "L'Appartamento",
+    "gallery": "Galleria",
+    "excursions": "Escursioni",
+    "availability": "Disponibilità",
+    "assistant": "Assistente",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "subtitle": "Un appartamento immerso nella natura sarda, a pochi minuti dalle spiagge più belle dell'Ogliastra.",
+    "checkAvailability": "Verifica Disponibilità",
+    "askAssistant": "Chiedi all'Assistente",
+    "scrollDown": "Scorri giù"
+  },
+  "idealFor": {
+    "title": "Ogni tipo di ospite",
+    "couples": "Coppie in cerca di relax e romanticismo tra natura e mare",
+    "families": "Famiglie che vogliono spazio, comfort e sicurezza",
+    "beachLovers": "Amanti del mare e delle spiagge cristalline dell'Ogliastra",
+    "remoteWorkers": "Smart worker in cerca di tranquillità e connessione"
+  },
+  "features": {
+    "title": "Comfort e servizi",
+    "subtitle": "Ogni dettaglio è pensato per rendere il tuo soggiorno indimenticabile, combinando l'autenticità sarda con il comfort moderno.",
+    "apartmentDetails": {
+      "title": "nel cuore dell'Ogliastra",
+      "surface": "80",
+      "surfaceLabel": "m² di spazio",
+      "bedrooms": "2",
+      "bedroomsLabel": "camere da letto",
+      "bathrooms": "1",
+      "bathroomsLabel": "bagno privato",
+      "guests": "4",
+      "guestsLabel": "ospiti max"
+    },
+    "kitchen": {
+      "title": "Cucina Attrezzata",
+      "description": "Cucina completa con tutti gli elettrodomestici necessari per cucinare i sapori della Sardegna"
+    },
+    "airConditioning": {
+      "title": "Clima e Ventilazione",
+      "description": "Aria condizionata e riscaldamento per un comfort perfetto in ogni stagione"
+    },
+    "wifi": {
+      "title": "WiFi Veloce",
+      "description": "Connessione internet stabile ad alta velocità per smart working e streaming"
+    },
+    "parking": {
+      "title": "Parcheggio Privato",
+      "description": "Posto auto privato incluso nel prezzo, senza pensieri"
+    },
+    "location": {
+      "title": "Posizione Strategica",
+      "description": "A 8 km dalle spiagge di Cala Liberotto, nel tranquillo paese di Torpè"
+    },
+    "washingMachine": {
+      "title": "Lavatrice",
+      "description": "Lavatrice a disposizione per soggiorni lunghi"
+    },
+    "smartTV": {
+      "title": "Smart TV",
+      "description": "Smart TV con Netflix, YouTube e le principali piattaforme streaming"
+    },
+    "terrace": {
+      "title": "Terrazzo Panoramico",
+      "description": "Ampio terrazzo con vista sulla campagna sarda, ideale per colazioni all'aperto"
+    },
+    "heating": {
+      "title": "Riscaldamento",
+      "description": "Sistema di riscaldamento per le fresche serate sarde"
+    },
+    "linens": {
+      "title": "Biancheria Inclusa",
+      "description": "Biancheria da letto e da bagno inclusa nel prezzo del soggiorno"
+    }
+  },
+  "gallery": {
+    "title": "L'appartamento in foto",
+    "categories": {
+      "all": "Tutte",
+      "exteriors": "Esterni",
+      "bedrooms": "Camere",
+      "kitchenLiving": "Cucina e Soggiorno",
+      "bathroom": "Bagno"
+    }
+  },
+  "excursions": {
+    "title": "Esplora l'Ogliastra",
+    "subtitle": "Spiagge, grotte, nuraghi, tutto a portata di mano",
+    "excursionTips": "Consiglio dell'host",
+    "excursionTipsText": "Noleggiate un'auto per esplorare liberamente. Le spiagge più belle si raggiungono con strade non sempre asfaltate: <strong>4x4 o auto alta da terra consigliata</strong> per Cala Goloritze.",
+    "categories": {
+      "all": "Tutte",
+      "beaches": "Spiagge",
+      "natureMountain": "Natura e Montagna",
+      "cultureHistory": "Cultura e Storia",
+      "activities": "Attività"
+    },
+    "places": {
+      "calaGoloritze": {
+        "name": "Cala Goloritze",
+        "description": "Una delle spiagge più belle d'Italia, con l'iconico arco di roccia e acque trasparenti. Raggiungibile a piedi o in barca."
+      },
+      "berchida": {
+        "name": "Spiaggia di Berchida",
+        "description": "Spiaggia selvaggia con dune di sabbia bianca e macchia mediterranea. Quasi deserta fuori stagione."
+      },
+      "calaBrandinchi": {
+        "name": "Cala Brandinchi",
+        "description": "Chiamata la 'Tahiti sarda' per le acque azzurre e la sabbia bianchissima. Una delle spiagge più fotografate della Sardegna."
+      },
+      "laCinta": {
+        "name": "Spiaggia della Cinta",
+        "description": "Lungo cordone sabbioso vicino a San Teodoro, perfetto per famiglie con bambini."
+      },
+      "nuragheLoelle": {
+        "name": "Nuraghe Loelle",
+        "description": "Complesso nuragico ben conservato, testimonianza della millenaria civiltà sarda."
+      },
+      "gorropu": {
+        "name": "Gole di Gorropu",
+        "description": "Il Grand Canyon d'Europa. Un trekking indimenticabile tra pareti di roccia alte 500 metri."
+      }
+    }
+  },
+  "calendar": {
+    "title": "Quando vieni",
+    "subtitle": "Controlla la disponibilità e prenota il tuo soggiorno in Sardegna",
+    "available": "Disponibile",
+    "occupied": "Occupato",
+    "notConfigured": "Calendario non configurato",
+    "loading": "Caricamento...",
+    "disclaimer": "* Le disponibilità si aggiornano in tempo reale dal calendario Google",
+    "errors": {
+      "notAccessible": "Calendario non accessibile. Verifica che sia pubblico.",
+      "notFound": "Calendario non trovato. Verifica l'ID del calendario.",
+      "generic": "Errore nel caricamento del calendario.",
+      "connection": "Errore di connessione. Riprova più tardi.",
+      "instructions": "Contattaci direttamente per verificare la disponibilità"
+    },
+    "months": {
+      "0": "Gennaio",
+      "1": "Febbraio",
+      "2": "Marzo",
+      "3": "Aprile",
+      "4": "Maggio",
+      "5": "Giugno",
+      "6": "Luglio",
+      "7": "Agosto",
+      "8": "Settembre",
+      "9": "Ottobre",
+      "10": "Novembre",
+      "11": "Dicembre"
+    },
+    "days": {
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mer",
+      "thu": "Gio",
+      "fri": "Ven",
+      "sat": "Sab",
+      "sun": "Dom"
+    }
+  },
+  "concierge": {
+    "title": "Assistente Virtuale",
+    "subtitle": "Chiedimi informazioni sulla casa, le spiagge, le escursioni e tutto ciò che ti serve per il tuo soggiorno.",
+    "initialMessage": "Ciao! Sono l'assistente di Domu Laura. Posso aiutarti con informazioni sull'appartamento, le spiagge vicine, o come prenotare il tuo soggiorno. Cosa ti posso dire?",
+    "placeholder": "Scrivi un messaggio...",
+    "send": "Invia",
+    "errorMessage": "Mi dispiace, si è verificato un errore. Riprova tra qualche istante."
+  },
+  "contact": {
+    "title": "Prenota il tuo",
+    "subtitle": "soggiorno. Siamo qui per te.",
+    "address": "Indirizzo",
+    "addressValue": "Via Lombardia 7a, 08020 Torpè (NU), Sardegna",
+    "email": "Email",
+    "emailValue": "info@domularura.it",
+    "whereWeAre": "Dove siamo",
+    "formTitle": "Richiesta di prenotazione",
+    "formSuccessTitle": "Messaggio inviato!",
+    "formSuccessMessage": "Ti risponderemo entro 24 ore.",
+    "formErrorTitle": "Errore nell'invio",
+    "formErrorMessage": "Si prega di riprovare o contattarci direttamente.",
+    "retry": "Riprova",
+    "fullName": "Nome completo",
+    "fullNamePlaceholder": "Mario Rossi",
+    "emailPlaceholder": "mario@email.com",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "message": "Messaggio",
+    "messagePlaceholder": "Desidero prenotare per...",
+    "submitting": "Invio in corso...",
+    "submit": "Invia richiesta",
+    "configMissingFormspree": "Form non configurato. Contattaci via WhatsApp o email.",
+    "configMissingWhatsapp": "WhatsApp non configurato.",
+    "configMissingTelegram": "Telegram non configurato."
+  },
+  "footer": {
+    "copyright": "© {{year}} Domu Laura. Tutti i diritti riservati.",
+    "privacy": "Privacy",
+    "terms": "Termini"
+  }
+}
