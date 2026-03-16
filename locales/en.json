@@ -1,0 +1,207 @@
+{
+  "navbar": {
+    "home": "Home",
+    "apartment": "The Apartment",
+    "gallery": "Gallery",
+    "excursions": "Excursions",
+    "availability": "Availability",
+    "assistant": "Assistant",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "An apartment immersed in Sardinian nature, just minutes from the most beautiful beaches of Ogliastra.",
+    "checkAvailability": "Check Availability",
+    "askAssistant": "Ask the Assistant",
+    "scrollDown": "Scroll down"
+  },
+  "idealFor": {
+    "title": "Every type of guest",
+    "couples": "Couples looking for relaxation and romance between nature and sea",
+    "families": "Families who want space, comfort and safety",
+    "beachLovers": "Beach lovers drawn to the crystal-clear waters of Ogliastra",
+    "remoteWorkers": "Remote workers seeking peace and connectivity"
+  },
+  "features": {
+    "title": "Comfort and amenities",
+    "subtitle": "Every detail is designed to make your stay unforgettable, combining authentic Sardinian character with modern comfort.",
+    "apartmentDetails": {
+      "title": "in the heart of Ogliastra",
+      "surface": "80",
+      "surfaceLabel": "m² of space",
+      "bedrooms": "2",
+      "bedroomsLabel": "bedrooms",
+      "bathrooms": "1",
+      "bathroomsLabel": "private bathroom",
+      "guests": "4",
+      "guestsLabel": "guests max"
+    },
+    "kitchen": {
+      "title": "Fully Equipped Kitchen",
+      "description": "Complete kitchen with all the appliances needed to cook Sardinian flavours"
+    },
+    "airConditioning": {
+      "title": "Air Conditioning",
+      "description": "Air conditioning and heating for perfect comfort in every season"
+    },
+    "wifi": {
+      "title": "Fast WiFi",
+      "description": "Stable high-speed internet connection for remote work and streaming"
+    },
+    "parking": {
+      "title": "Private Parking",
+      "description": "Private parking space included in the price, stress-free"
+    },
+    "location": {
+      "title": "Strategic Location",
+      "description": "8 km from the beaches of Cala Liberotto, in the peaceful village of Torpè"
+    },
+    "washingMachine": {
+      "title": "Washing Machine",
+      "description": "Washing machine available for longer stays"
+    },
+    "smartTV": {
+      "title": "Smart TV",
+      "description": "Smart TV with Netflix, YouTube and major streaming platforms"
+    },
+    "terrace": {
+      "title": "Panoramic Terrace",
+      "description": "Spacious terrace overlooking the Sardinian countryside, perfect for outdoor breakfasts"
+    },
+    "heating": {
+      "title": "Heating",
+      "description": "Heating system for cool Sardinian evenings"
+    },
+    "linens": {
+      "title": "Linens Included",
+      "description": "Bed and bath linens included in the stay price"
+    }
+  },
+  "gallery": {
+    "title": "The apartment in photos",
+    "categories": {
+      "all": "All",
+      "exteriors": "Exteriors",
+      "bedrooms": "Bedrooms",
+      "kitchenLiving": "Kitchen & Living",
+      "bathroom": "Bathroom"
+    }
+  },
+  "excursions": {
+    "title": "Explore Ogliastra",
+    "subtitle": "Beaches, caves, nuraghi, all within reach",
+    "excursionTips": "Host's tip",
+    "excursionTipsText": "Rent a car to explore freely. The most beautiful beaches are reached via unpaved roads: <strong>4x4 or high-clearance vehicle recommended</strong> for Cala Goloritze.",
+    "categories": {
+      "all": "All",
+      "beaches": "Beaches",
+      "natureMountain": "Nature & Mountain",
+      "cultureHistory": "Culture & History",
+      "activities": "Activities"
+    },
+    "places": {
+      "calaGoloritze": {
+        "name": "Cala Goloritze",
+        "description": "One of Italy's most beautiful beaches, with its iconic rock arch and crystal-clear waters. Accessible by foot or boat."
+      },
+      "berchida": {
+        "name": "Berchida Beach",
+        "description": "A wild beach with white sand dunes and Mediterranean scrub. Nearly deserted out of season."
+      },
+      "calaBrandinchi": {
+        "name": "Cala Brandinchi",
+        "description": "Called 'Sardinian Tahiti' for its azure waters and brilliant white sand. One of Sardinia's most photographed beaches."
+      },
+      "laCinta": {
+        "name": "La Cinta Beach",
+        "description": "A long sandy strip near San Teodoro, perfect for families with children."
+      },
+      "nuragheLoelle": {
+        "name": "Nuraghe Loelle",
+        "description": "A well-preserved nuragic complex, testament to Sardinia's millennia-old civilisation."
+      },
+      "gorropu": {
+        "name": "Gorropu Gorge",
+        "description": "Europe's Grand Canyon. An unforgettable trek among rock walls up to 500 metres high."
+      }
+    }
+  },
+  "calendar": {
+    "title": "When are you coming",
+    "subtitle": "Check availability and book your stay in Sardinia",
+    "available": "Available",
+    "occupied": "Occupied",
+    "notConfigured": "Calendar not configured",
+    "loading": "Loading...",
+    "disclaimer": "* Availability updates in real time from Google Calendar",
+    "errors": {
+      "notAccessible": "Calendar not accessible. Please make it public.",
+      "notFound": "Calendar not found. Please check the calendar ID.",
+      "generic": "Error loading the calendar.",
+      "connection": "Connection error. Please try again later.",
+      "instructions": "Contact us directly to check availability"
+    },
+    "months": {
+      "0": "January",
+      "1": "February",
+      "2": "March",
+      "3": "April",
+      "4": "May",
+      "5": "June",
+      "6": "July",
+      "7": "August",
+      "8": "September",
+      "9": "October",
+      "10": "November",
+      "11": "December"
+    },
+    "days": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    }
+  },
+  "concierge": {
+    "title": "Virtual Assistant",
+    "subtitle": "Ask me about the house, beaches, excursions and everything you need for your stay.",
+    "initialMessage": "Hello! I'm the Domu Laura assistant. I can help you with information about the apartment, nearby beaches, or how to book your stay. What can I tell you?",
+    "placeholder": "Write a message...",
+    "send": "Send",
+    "errorMessage": "I'm sorry, an error occurred. Please try again in a moment."
+  },
+  "contact": {
+    "title": "Book your",
+    "subtitle": "stay. We are here for you.",
+    "address": "Address",
+    "addressValue": "Via Lombardia 7a, 08020 Torpè (NU), Sardinia",
+    "email": "Email",
+    "emailValue": "info@domularura.it",
+    "whereWeAre": "Where we are",
+    "formTitle": "Booking request",
+    "formSuccessTitle": "Message sent!",
+    "formSuccessMessage": "We will reply within 24 hours.",
+    "formErrorTitle": "Sending error",
+    "formErrorMessage": "Please try again or contact us directly.",
+    "retry": "Try again",
+    "fullName": "Full name",
+    "fullNamePlaceholder": "John Smith",
+    "emailPlaceholder": "john@email.com",
+    "checkin": "Check-in",
+    "checkout": "Check-out",
+    "message": "Message",
+    "messagePlaceholder": "I would like to book for...",
+    "submitting": "Sending...",
+    "submit": "Send request",
+    "configMissingFormspree": "Form not configured. Contact us via WhatsApp or email.",
+    "configMissingWhatsapp": "WhatsApp not configured.",
+    "configMissingTelegram": "Telegram not configured."
+  },
+  "footer": {
+    "copyright": "© {{year}} Domu Laura. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}
