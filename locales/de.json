@@ -83,7 +83,8 @@
       "exteriors": "Außenbereich",
       "bedrooms": "Schlafzimmer",
       "kitchenLiving": "Küche & Wohnzimmer",
-      "bathroom": "Bad"
+      "bathroom": "Bad",
+      "details": "Details"
     }
   },
   "excursions": {

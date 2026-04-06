@@ -83,7 +83,8 @@
       "exteriors": "Esterni",
       "bedrooms": "Camere",
       "kitchenLiving": "Cucina e Soggiorno",
-      "bathroom": "Bagno"
+      "bathroom": "Bagno",
+      "details": "Dettagli"
     }
   },
   "excursions": {

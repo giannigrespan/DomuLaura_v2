@@ -83,7 +83,8 @@
       "exteriors": "Exteriors",
       "bedrooms": "Bedrooms",
       "kitchenLiving": "Kitchen & Living",
-      "bathroom": "Bathroom"
+      "bathroom": "Bathroom",
+      "details": "Details"
     }
   },
   "excursions": {

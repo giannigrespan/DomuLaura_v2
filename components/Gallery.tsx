@@ -4,26 +4,39 @@ import { useTranslation } from 'react-i18next';
 interface GalleryImage { url: string; alt: string; category?: string; }
 
 const CATEGORY_KEYS: Record<string, string> = {
-  'Esterni':          'gallery.categories.exteriors',
-  'Camere':           'gallery.categories.bedrooms',
+  'Esterni':            'gallery.categories.exteriors',
+  'Camere':             'gallery.categories.bedrooms',
   'Cucina e Soggiorno': 'gallery.categories.kitchenLiving',
-  'Bagno':            'gallery.categories.bathroom',
+  'Bagno':              'gallery.categories.bathroom',
+  'Dettagli':           'gallery.categories.details',
 };
 
 const GALLERY_IMAGES: GalleryImage[] = [
-  { url: '/esterno-cortile.webp',     alt: 'Ingresso esterno',        category: 'Esterni' },
-  { url: '/esterno-ingresso.webp',    alt: 'Ingresso',                category: 'Esterni' },
-  { url: '/appfuori_web.jpg',         alt: 'Esterno con ulivo',       category: 'Esterni' },
-  { url: '/terrazzo1.jpg',            alt: 'Terrazzo panoramico',     category: 'Esterni' },
-  { url: '/terrazzino-1.webp',        alt: 'Terrazzino',              category: 'Esterni' },
-  { url: '/cucina-1.webp',            alt: 'Cucina attrezzata',       category: 'Cucina e Soggiorno' },
-  { url: '/cucina-2.webp',            alt: 'Cucina dettaglio',        category: 'Cucina e Soggiorno' },
-  { url: '/1765898323307_web.jpg',    alt: 'Cucina e soggiorno',      category: 'Cucina e Soggiorno' },
-  { url: '/1765897883897_web.jpg',    alt: 'Soggiorno',               category: 'Cucina e Soggiorno' },
-  { url: '/camera-1.webp',            alt: 'Camera da letto',         category: 'Camere' },
-  { url: '/1765897703169_web.jpg',    alt: 'Camera matrimoniale',     category: 'Camere' },
-  { url: '/camera2.jpg',             alt: 'Seconda camera',          category: 'Camere' },
-  { url: '/bagno-1.webp',            alt: 'Bagno',                   category: 'Bagno' },
+  // Esterni — originali + nuovi terrazzo
+  { url: '/esterno-cortile.webp',                          alt: 'Ingresso esterno',               category: 'Esterni' },
+  { url: '/esterno-ingresso.webp',                         alt: 'Ingresso',                       category: 'Esterni' },
+  { url: '/appfuori_web.jpg',                              alt: 'Esterno con ulivo',              category: 'Esterni' },
+  { url: '/terrazzo1.jpg',                                 alt: 'Terrazzo panoramico',            category: 'Esterni' },
+  { url: '/terrazzino-1.webp',                             alt: 'Terrazzino',                     category: 'Esterni' },
+  { url: '/selezione/IMG_20260404_144214.jpg',             alt: 'Terrazzo coperto con tavolo',    category: 'Esterni' },
+  { url: '/selezione/IMG_20260404_144712.jpg',             alt: 'Terrazzino con vista sul monte', category: 'Esterni' },
+  // Cucina e Soggiorno — nuove foto
+  { url: '/selezione/IMG_20260404_151055.jpg',             alt: 'Cucina e soggiorno open space',  category: 'Cucina e Soggiorno' },
+  { url: '/selezione/IMG_20260404_151310.jpg',             alt: 'Soggiorno con cucina',           category: 'Cucina e Soggiorno' },
+  // Camere — nuove foto
+  { url: '/selezione/IMG_20260404_092910.jpg',             alt: 'Camera da letto',                category: 'Camere' },
+  { url: '/selezione/IMG_20260404_092921.jpg',             alt: 'Camera con armadio',             category: 'Camere' },
+  { url: '/selezione/IMG_20260404_094209.jpg',             alt: 'Camera matrimoniale',            category: 'Camere' },
+  { url: '/selezione/IMG_20260404_094250.jpg',             alt: 'Camera con accesso terrazzo',    category: 'Camere' },
+  // Bagno — nuove foto
+  { url: '/selezione/IMG_20260404_093300.jpg',             alt: 'Bagno con doccia',               category: 'Bagno' },
+  { url: '/selezione/IMG_20260404_093316.jpg',             alt: 'Bagno con lavandino',            category: 'Bagno' },
+  { url: '/selezione/IMG_20260404_093537.jpg',             alt: 'Bagno completo',                 category: 'Bagno' },
+  // Dettagli — decorazioni sarde
+  { url: '/selezione/IMG_20260404_144326.jpg',             alt: 'Targa in ceramica sarda',        category: 'Dettagli' },
+  { url: '/selezione/IMG_20260404_145134.jpg',             alt: 'Souvenir sardi',                 category: 'Dettagli' },
+  { url: '/selezione/IMG_20260404_145253.jpg',             alt: 'Lampada in ceramica sarda',      category: 'Dettagli' },
+  { url: '/selezione/IMG_20260404_145357.jpg',             alt: 'Dettaglio decorativo',           category: 'Dettagli' },
 ];
 
 export const Gallery: React.FC = () => {
