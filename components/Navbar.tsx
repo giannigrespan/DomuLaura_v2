@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { NavItem } from '../types';
 
 const LANGUAGES = [
-  { code: 'it', name: 'IT', flag: '🇮🇹' },
-  { code: 'en', name: 'EN', flag: '🇬🇧' },
-  { code: 'de', name: 'DE', flag: '🇩🇪' }
+  { code: 'it', name: 'IT', flagCode: 'it' },
+  { code: 'en', name: 'EN', flagCode: 'gb' },
+  { code: 'de', name: 'DE', flagCode: 'de' },
 ];
 
 export const Navbar: React.FC = () => {
@@ -78,7 +78,7 @@ export const Navbar: React.FC = () => {
                   scrolled ? 'text-sardinia-dark' : 'text-white'
                 }`}
               >
-                <span className="flag-emoji text-lg leading-none">{currentLang.flag}</span>
+                <span className={`fi fi-${currentLang.flagCode} text-base`} style={{ borderRadius: '2px' }} />
                 <span>{currentLang.name}</span>
                 <svg className={`w-3 h-3 transition-transform ${isLangMenuOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -94,7 +94,7 @@ export const Navbar: React.FC = () => {
                         i18n.language === lang.code ? 'text-sardinia-terra' : 'text-sardinia-dark'
                       }`}
                     >
-                      <span className="flag-emoji text-base">{lang.flag}</span>
+                      <span className={`fi fi-${lang.flagCode}`} style={{ borderRadius: '2px' }} />
                       <span>{lang.name}</span>
                     </button>
                   ))}
@@ -107,7 +107,7 @@ export const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center gap-3">
             <div className="relative">
               <button onClick={() => setIsLangMenuOpen(!isLangMenuOpen)} className="p-1">
-                <span className={`flag-emoji text-xl ${scrolled ? '' : 'text-white'}`}>{currentLang.flag}</span>
+                <span className={`fi fi-${currentLang.flagCode} text-xl`} style={{ borderRadius: '2px' }} />
               </button>
               {isLangMenuOpen && (
                 <div className="absolute right-0 mt-2 w-28 bg-sardinia-cream border border-sardinia-sand shadow-xl">
@@ -117,7 +117,7 @@ export const Navbar: React.FC = () => {
                       onClick={() => changeLanguage(lang.code)}
                       className="w-full text-left px-3 py-2 text-xs tracking-wider uppercase font-medium flex items-center gap-2 hover:bg-sardinia-sand"
                     >
-                      <span className="flag-emoji text-base">{lang.flag}</span>
+                      <span className={`fi fi-${lang.flagCode}`} style={{ borderRadius: '2px' }} />
                       <span>{lang.name}</span>
                     </button>
                   ))}
