@@ -6,7 +6,8 @@
     "excursions": "Ausflüge",
     "availability": "Verfügbarkeit",
     "assistant": "Assistent",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "partners": "Partner"
   },
   "hero": {
     "subtitle": "Eine Wohnung inmitten der sardischen Natur, nur wenige Minuten von den schönsten Stränden Ogliastras entfernt.",
@@ -204,5 +205,18 @@
     "copyright": "© {{year}} Domu Laura. Alle Rechte vorbehalten.",
     "privacy": "Datenschutz",
     "terms": "AGB"
+  },
+  "partners": {
+    "label": "Kooperationen",
+    "title": "Partner & Services",
+    "subtitle": "Wir arbeiten mit ausgewählten lokalen Betrieben zusammen, um unseren Gästen exklusive Erlebnisse in unmittelbarer Nähe der Unterkunft zu bieten.",
+    "badge": "Offizieller Partner",
+    "kitesurf": {
+      "tagline": "Wassersport auf Sardinien",
+      "description": "Wassersportschule in Kooperation mit Domu Laura. Kurse für alle Niveaus mit zertifizierten Lehrern an der Küste von Siniscola, nur 5 Minuten vom Apartment entfernt.",
+      "services": "Kitesurfen · Wing Foil · SUP · Wakeboard · SUP Pilates",
+      "location": "San Narciso, Siniscola",
+      "cta": "Website besuchen"
+    }
   }
 }

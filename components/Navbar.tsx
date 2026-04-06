@@ -25,6 +25,7 @@ export const Navbar: React.FC = () => {
     { label: t('navbar.apartment'),    href: '#features' },
     { label: t('navbar.gallery'),      href: '#gallery' },
     { label: t('navbar.excursions'),   href: '#excursions' },
+    { label: t('navbar.partners'),     href: '#partners' },
     { label: t('navbar.availability'), href: '#calendar' },
     { label: t('navbar.assistant'),    href: '#concierge' },
     { label: t('navbar.contact'),      href: '#contact' },

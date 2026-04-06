@@ -5,6 +5,7 @@ import { IdealFor } from './components/IdealFor';
 import { Features } from './components/Features';
 import { Gallery } from './components/Gallery';
 import { Excursions } from './components/Excursions';
+import { Partners } from './components/Partners';
 import { CalendarSection } from './components/CalendarSection';
 import { Concierge } from './components/Concierge';
 import { ContactSection } from './components/ContactSection';
@@ -44,6 +45,7 @@ const App: React.FC = () => {
         <Features />
         <Gallery />
         <Excursions />
+        <Partners />
         <CalendarSection />
         <Concierge />
         <ContactSection />

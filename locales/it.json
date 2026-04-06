@@ -6,7 +6,8 @@
     "excursions": "Escursioni",
     "availability": "Disponibilità",
     "assistant": "Assistente",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "partners": "Partner"
   },
   "hero": {
     "subtitle": "Un appartamento immerso nella natura sarda, a pochi minuti dalle spiagge più belle dell'Ogliastra.",
@@ -204,5 +205,18 @@
     "copyright": "© {{year}} Domu Laura. Tutti i diritti riservati.",
     "privacy": "Privacy",
     "terms": "Termini"
+  },
+  "partners": {
+    "label": "Convenzioni",
+    "title": "Partner & Servizi",
+    "subtitle": "Collaboriamo con attività selezionate per offrire ai nostri ospiti esperienze esclusive a pochi passi dall'appartamento.",
+    "badge": "Partner Ufficiale",
+    "kitesurf": {
+      "tagline": "Sport acquatici in Sardegna",
+      "description": "Scuola di sport acquatici convenzionata con Domu Laura. Corsi per tutti i livelli con istruttori certificati direttamente sulla costa di Siniscola, a soli 5 minuti dall'appartamento.",
+      "services": "Kitesurf · Wing Foil · SUP · Wakeboard · SUP Pilates",
+      "location": "San Narciso, Siniscola",
+      "cta": "Visita il sito"
+    }
   }
 }
