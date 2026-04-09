@@ -23,20 +23,18 @@ const GALLERY_IMAGES: GalleryImage[] = [
   // Cucina e Soggiorno — nuove foto
   { url: '/selezione/IMG_20260404_151055.jpg',             alt: 'Cucina e soggiorno open space',  category: 'Cucina e Soggiorno' },
   { url: '/selezione/IMG_20260404_151310.jpg',             alt: 'Soggiorno con cucina',           category: 'Cucina e Soggiorno' },
-  // Camere — nuove foto
-  { url: '/selezione/IMG_20260404_092910.jpg',             alt: 'Camera da letto',                category: 'Camere' },
-  { url: '/selezione/IMG_20260404_092921.jpg',             alt: 'Camera con armadio',             category: 'Camere' },
-  { url: '/selezione/IMG_20260404_094209.jpg',             alt: 'Camera matrimoniale',            category: 'Camere' },
-  { url: '/selezione/IMG_20260404_094250.jpg',             alt: 'Camera con accesso terrazzo',    category: 'Camere' },
-  // Bagno — nuove foto
-  { url: '/selezione/IMG_20260404_093300.jpg',             alt: 'Bagno con doccia',               category: 'Bagno' },
-  { url: '/selezione/IMG_20260404_093316.jpg',             alt: 'Bagno con lavandino',            category: 'Bagno' },
-  { url: '/selezione/IMG_20260404_093537.jpg',             alt: 'Bagno completo',                 category: 'Bagno' },
+  // Camere — con quadri installati
+  { url: '/selezione/camera1 quadri.png',                  alt: 'Camera con quadri e trittico',   category: 'Camere' },
+  { url: '/selezione/camera2 con quadro.png',              alt: 'Camera con trittico marino',      category: 'Camere' },
+  { url: '/selezione/camera1 coralli.png',                 alt: 'Camera con quadri corallo',      category: 'Camere' },
+  // Bagno — collage completo
+  { url: '/selezione/Bagno collage.png',                   alt: 'Bagno completo',                 category: 'Bagno' },
   // Dettagli — decorazioni sarde
-  { url: '/selezione/IMG_20260404_144326.jpg',             alt: 'Targa in ceramica sarda',        category: 'Dettagli' },
-  { url: '/selezione/IMG_20260404_145134.jpg',             alt: 'Souvenir sardi',                 category: 'Dettagli' },
-  { url: '/selezione/IMG_20260404_145253.jpg',             alt: 'Lampada in ceramica sarda',      category: 'Dettagli' },
-  { url: '/selezione/IMG_20260404_145357.jpg',             alt: 'Dettaglio decorativo',           category: 'Dettagli' },
+  { url: '/selezione/7g.jpg',                              alt: 'Targa in ceramica sarda',        category: 'Dettagli' },
+  { url: '/selezione/dettagli oggetti.jpg',                alt: 'Oggetti decorativi sardi',       category: 'Dettagli' },
+  { url: '/selezione/lampada muro.jpg',                    alt: 'Lampada in ceramica sarda',      category: 'Dettagli' },
+  { url: '/selezione/piastrelle.jpg',                      alt: 'Piastrelle e dettagli',          category: 'Dettagli' },
+  { url: '/selezione/specchio.jpg',                        alt: 'Specchio e lampada a muro',      category: 'Dettagli' },
 ];
 
 export const Gallery: React.FC = () => {
