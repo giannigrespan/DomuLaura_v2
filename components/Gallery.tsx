@@ -12,29 +12,33 @@ const CATEGORY_KEYS: Record<string, string> = {
 };
 
 const GALLERY_IMAGES: GalleryImage[] = [
-  // Esterni — originali + nuovi terrazzo
-  { url: '/esterno-cortile.webp',                          alt: 'Ingresso esterno',               category: 'Esterni' },
-  { url: '/esterno-ingresso.webp',                         alt: 'Ingresso',                       category: 'Esterni' },
-  { url: '/appfuori_web.jpg',                              alt: 'Esterno con ulivo',              category: 'Esterni' },
-  { url: '/terrazzo1.jpg',                                 alt: 'Terrazzo panoramico',            category: 'Esterni' },
-  { url: '/terrazzino-1.webp',                             alt: 'Terrazzino',                     category: 'Esterni' },
-  { url: '/selezione/IMG_20260404_144214.jpg',             alt: 'Terrazzo coperto con tavolo',    category: 'Esterni' },
-  { url: '/selezione/IMG_20260404_144712.jpg',             alt: 'Terrazzino con vista sul monte', category: 'Esterni' },
-  // Cucina e Soggiorno — nuove foto
-  { url: '/selezione/IMG_20260404_151055.jpg',             alt: 'Cucina e soggiorno open space',  category: 'Cucina e Soggiorno' },
-  { url: '/selezione/IMG_20260404_151310.jpg',             alt: 'Soggiorno con cucina',           category: 'Cucina e Soggiorno' },
-  // Camere — con quadri installati
-  { url: '/selezione/camera1 quadri.png',                  alt: 'Camera con quadri e trittico',   category: 'Camere' },
-  { url: '/selezione/camera2 con quadro.png',              alt: 'Camera con trittico marino',      category: 'Camere' },
-  { url: '/selezione/camera1 coralli.png',                 alt: 'Camera con quadri corallo',      category: 'Camere' },
-  // Bagno — collage completo
-  { url: '/selezione/Bagno collage.png',                   alt: 'Bagno completo',                 category: 'Bagno' },
-  // Dettagli — decorazioni sarde
-  { url: '/selezione/7g.jpg',                              alt: 'Targa in ceramica sarda',        category: 'Dettagli' },
-  { url: '/selezione/dettagli oggetti.jpg',                alt: 'Oggetti decorativi sardi',       category: 'Dettagli' },
-  { url: '/selezione/lampada muro.jpg',                    alt: 'Lampada in ceramica sarda',      category: 'Dettagli' },
-  { url: '/selezione/piastrelle.jpg',                      alt: 'Piastrelle e dettagli',          category: 'Dettagli' },
-  { url: '/selezione/specchio.jpg',                        alt: 'Specchio e lampada a muro',      category: 'Dettagli' },
+  // Esterni
+  { url: '/esterno-cortile.webp',                     alt: 'Ingresso esterno',             category: 'Esterni' },
+  { url: '/esterno-ingresso.webp',                    alt: 'Ingresso',                     category: 'Esterni' },
+  { url: '/appfuori_web.jpg',                         alt: 'Esterno con ulivo',            category: 'Esterni' },
+  { url: '/buone/vista da fuori.jpg',                 alt: 'Vista esterna',                category: 'Esterni' },
+  { url: '/buone/vista giardino.jpg',                 alt: 'Vista giardino',               category: 'Esterni' },
+  { url: '/buone/vista alberi.jpg',                   alt: 'Vista degli alberi',           category: 'Esterni' },
+  { url: '/buone/terrazzo 1 con tavola piena.png',    alt: 'Terrazzo coperto con tavolo',  category: 'Esterni' },
+  { url: '/buone/terrazzo con tavolo.jpg',            alt: 'Terrazzo con tavolo',          category: 'Esterni' },
+  // Cucina e Soggiorno
+  { url: '/buone/cucina da divano.png',               alt: 'Cucina e soggiorno open space', category: 'Cucina e Soggiorno' },
+  { url: '/buone/cucina da ingresso.png',             alt: 'Cucina vista dall\'ingresso',  category: 'Cucina e Soggiorno' },
+  // Camere
+  { url: '/buone/camera1 quadri.png',                 alt: 'Camera con quadri e trittico', category: 'Camere' },
+  { url: '/buone/camera2 con quadro.png',             alt: 'Camera con trittico marino',   category: 'Camere' },
+  { url: '/buone/camera1 coralli.png',                alt: 'Camera con quadri corallo',    category: 'Camere' },
+  // Bagno
+  { url: '/buone/Bagno collage.png',                  alt: 'Bagno completo',               category: 'Bagno' },
+  { url: '/buone/pianta bagno.jpg',                   alt: 'Dettaglio bagno',              category: 'Bagno' },
+  // Dettagli
+  { url: '/buone/7g.jpg',                             alt: 'Targa in ceramica sarda',      category: 'Dettagli' },
+  { url: '/buone/dettagli oggetti.jpg',               alt: 'Oggetti decorativi sardi',     category: 'Dettagli' },
+  { url: '/buone/oggetti.jpg',                        alt: 'Oggetti decorativi',           category: 'Dettagli' },
+  { url: '/buone/lampada muro.jpg',                   alt: 'Lampada in ceramica sarda',    category: 'Dettagli' },
+  { url: '/buone/plafoniera.jpg',                     alt: 'Plafoniera',                   category: 'Dettagli' },
+  { url: '/buone/specchio e plafoniera.jpg',          alt: 'Specchio e plafoniera',        category: 'Dettagli' },
+  { url: '/buone/specchio.jpg',                       alt: 'Specchio a muro',              category: 'Dettagli' },
 ];
 
 export const Gallery: React.FC = () => {
