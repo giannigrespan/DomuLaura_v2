@@ -33,12 +33,9 @@ const GALLERY_IMAGES: GalleryImage[] = [
   { url: '/buone/pianta bagno.jpg',                   alt: 'Dettaglio bagno',              category: 'Bagno' },
   // Dettagli
   { url: '/buone/7g.jpg',                             alt: 'Targa in ceramica sarda',      category: 'Dettagli' },
-  { url: '/buone/dettagli oggetti.jpg',               alt: 'Oggetti decorativi sardi',     category: 'Dettagli' },
   { url: '/buone/oggetti.jpg',                        alt: 'Oggetti decorativi',           category: 'Dettagli' },
-  { url: '/buone/lampada muro.jpg',                   alt: 'Lampada in ceramica sarda',    category: 'Dettagli' },
   { url: '/buone/plafoniera.jpg',                     alt: 'Plafoniera',                   category: 'Dettagli' },
   { url: '/buone/specchio e plafoniera.jpg',          alt: 'Specchio e plafoniera',        category: 'Dettagli' },
-  { url: '/buone/specchio.jpg',                       alt: 'Specchio a muro',              category: 'Dettagli' },
 ];
 
 export const Gallery: React.FC = () => {
