@@ -101,6 +101,10 @@
       "activities": "Attività"
     },
     "places": {
+      "laCaletta": {
+        "name": "La Caletta",
+        "description": "La spiaggia più vicina a casa, a soli 3 km. Sabbia dorata, mare calmo e servizi presenti. Ideale per chi cerca relax senza spostarsi."
+      },
       "calaGoloritze": {
         "name": "Cala Goloritze",
         "description": "Una delle spiagge più belle d'Italia, con l'iconico arco di roccia e acque trasparenti. Raggiungibile a piedi o in barca."
