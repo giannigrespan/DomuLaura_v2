@@ -101,6 +101,10 @@
       "activities": "Activities"
     },
     "places": {
+      "laCaletta": {
+        "name": "La Caletta",
+        "description": "The closest beach to the house, just 3 km away. Golden sand, calm sea and facilities available. Perfect for relaxing without travelling far."
+      },
       "calaGoloritze": {
         "name": "Cala Goloritze",
         "description": "One of Italy's most beautiful beaches, with its iconic rock arch and crystal-clear waters. Accessible by foot or boat."

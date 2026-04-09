@@ -101,6 +101,10 @@
       "activities": "Aktivitäten"
     },
     "places": {
+      "laCaletta": {
+        "name": "La Caletta",
+        "description": "Der nächste Strand zum Haus, nur 3 km entfernt. Goldener Sand, ruhiges Meer und vorhandene Einrichtungen. Ideal zum Entspannen ohne weite Anreise."
+      },
       "calaGoloritze": {
         "name": "Cala Goloritze",
         "description": "Einer der schönsten Strände Italiens mit dem ikonischen Felsbogen und klarem Wasser. Per Fuß oder Boot erreichbar."

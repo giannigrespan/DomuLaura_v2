@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 interface Excursion { translationKey: string; image: string; distance: string; category: 'beaches' | 'natureMountain' | 'cultureHistory' | 'activities'; duration?: string; }
 
 const EXCURSIONS: Excursion[] = [
+  { translationKey: 'excursions.places.laCaletta',       image: '/lacaletta.jpg',     distance: '3 km',  category: 'beaches',        duration: '5 min'    },
   { translationKey: 'excursions.places.calaGoloritze',  image: '/calagoloritze.jpg', distance: '50 km', category: 'beaches',        duration: '1 ora'    },
   { translationKey: 'excursions.places.berchida',        image: '/berchida.jpg',      distance: '12 km', category: 'beaches',        duration: '18 min'   },
   { translationKey: 'excursions.places.calaBrandinchi',  image: '/Cala-Brandinchi.webp', distance: '14 km', category: 'beaches',    duration: '20 min'   },
