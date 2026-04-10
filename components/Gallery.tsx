@@ -145,19 +145,15 @@ export const Gallery: React.FC = () => {
             <img
               src={img.url}
               alt={img.alt}
-              className="absolute inset-0 w-full h-full object-cover select-none"
+              className="absolute inset-0 w-full h-full object-contain select-none"
               style={{ opacity: visible ? 1 : 0, transition: `opacity ${FADE_MS}ms ease` }}
               draggable={false}
             />
           )}
 
-          {/* Bottom gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent pointer-events-none" />
-
-          {/* Caption + counter */}
+          {/* Counter */}
           <div className="absolute bottom-8 left-8">
-            <p className="text-white text-sm font-light tracking-wide drop-shadow">{img?.alt}</p>
-            <p className="text-white/40 text-[11px] tracking-widest mt-1 uppercase">{idx + 1} / {filtered.length}</p>
+            <p className="text-white/40 text-[11px] tracking-widest uppercase">{idx + 1} / {filtered.length}</p>
           </div>
 
           {/* Progress bar */}
