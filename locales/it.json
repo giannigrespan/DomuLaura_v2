@@ -203,7 +203,8 @@
     "submit": "Invia richiesta",
     "configMissingFormspree": "Form non configurato. Contattaci via WhatsApp o email.",
     "configMissingWhatsapp": "WhatsApp non configurato.",
-    "configMissingTelegram": "Telegram non configurato."
+    "configMissingTelegram": "Telegram non configurato.",
+    "configMissingInstagram": "Instagram non configurato."
   },
   "footer": {
     "copyright": "© {{year}} Domu Laura. Tutti i diritti riservati.",
