@@ -15,6 +15,7 @@ export default defineConfig(({ mode }) => {
       'process.env.FORMSPREE_ENDPOINT':  JSON.stringify(get('FORMSPREE_ENDPOINT')),
       'process.env.TELEGRAM_LINK':       JSON.stringify(get('TELEGRAM_LINK')),
       'process.env.WHATSAPP_LINK':       JSON.stringify(get('WHATSAPP_LINK')),
+      'process.env.INSTAGRAM_LINK':      JSON.stringify(get('INSTAGRAM_LINK')),
       'process.env.GEMINI_API_KEY':      JSON.stringify(get('GEMINI_API_KEY')),
     },
   };
