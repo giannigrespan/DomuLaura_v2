@@ -15,7 +15,6 @@ const GALLERY_IMAGES: GalleryImage[] = [
   // Esterni
   { url: '/esterno-cortile.webp',                     alt: 'Ingresso esterno',              category: 'Esterni' },
   { url: '/esterno-ingresso.webp',                    alt: 'Ingresso',                      category: 'Esterni' },
-  { url: '/appfuori_web.jpg',                         alt: 'Esterno con ulivo',             category: 'Esterni' },
   { url: '/buone/vista da fuori.jpg',                 alt: 'Vista esterna',                 category: 'Esterni' },
   { url: '/buone/vista giardino.jpg',                 alt: 'Vista giardino',                category: 'Esterni' },
   { url: '/buone/vista alberi.jpg',                   alt: 'Vista degli alberi',            category: 'Esterni' },
