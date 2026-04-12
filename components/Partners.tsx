@@ -19,7 +19,7 @@ const PARTNERS: Partner[] = [
     descriptionKey: 'partners.kitesurf.description',
     servicesKey: 'partners.kitesurf.services',
     locationKey: 'partners.kitesurf.location',
-    image: '/spiaggia-cala-brandinchi-panoramica.webp',
+    image: '/buone/kitesurf.jpeg',
     website: 'https://www.kitesurflacaletta.it/',
     phone: '+39 329 068 2045',
   },
