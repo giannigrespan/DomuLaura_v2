@@ -37,37 +37,54 @@ const GALLERY_IMAGES: GalleryImage[] = [
 ];
 
 const INTERVAL_MS = 4500;
-const FADE_MS     = 600;
+const FADE_MS     = 500;
 
 export const Gallery: React.FC = () => {
   const { t } = useTranslation();
-  const [selected, setSelected]   = useState('Tutte');
-  const [idx, setIdx]             = useState(0);
-  const [visible, setVisible]     = useState(true);
+  const [selected, setSelected] = useState('Tutte');
+  const [idx, setIdx]           = useState(0);
 
-  // Refs so interval callbacks always see the latest values
-  const idxRef          = useRef(0);
-  const filteredLenRef  = useRef(GALLERY_IMAGES.length);
-  const fadingRef       = useRef(false);
-  const fadeTimerRef    = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const intervalRef     = useRef<ReturnType<typeof setInterval> | null>(null);
+  // Two-slot crossfade: slot A and slot B alternate as active
+  const [slotA, setSlotA]       = useState<GalleryImage>(GALLERY_IMAGES[0]);
+  const [slotB, setSlotB]       = useState<GalleryImage>(GALLERY_IMAGES[0]);
+  const [activeSlot, setActiveSlot] = useState<'a' | 'b'>('a');
+
+  const idxRef         = useRef(0);
+  const filteredRef    = useRef(GALLERY_IMAGES);
+  const filteredLenRef = useRef(GALLERY_IMAGES.length);
+  const fadingRef      = useRef(false);
+  const fadeTimerRef   = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const intervalRef    = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const translateCat = (cat: string) =>
     cat === 'Tutte' ? t('gallery.categories.all') : t(CATEGORY_KEYS[cat] || cat);
 
   const categories = ['Tutte', ...Array.from(new Set(GALLERY_IMAGES.map(i => i.category).filter(Boolean) as string[]))];
   const filtered   = selected === 'Tutte' ? GALLERY_IMAGES : GALLERY_IMAGES.filter(i => i.category === selected);
+  filteredRef.current    = filtered;
   filteredLenRef.current = filtered.length;
 
   const fadeTo = useCallback((newIdx: number) => {
     if (fadingRef.current) return;
     fadingRef.current = true;
-    setVisible(false);
+
+    const newImg = filteredRef.current[newIdx] ?? filteredRef.current[0];
+
+    // Load new image into the inactive slot, then make it active (crossfade)
+    setActiveSlot(prev => {
+      if (prev === 'a') {
+        setSlotB(newImg);
+        return 'b';
+      } else {
+        setSlotA(newImg);
+        return 'a';
+      }
+    });
+
     if (fadeTimerRef.current) clearTimeout(fadeTimerRef.current);
     fadeTimerRef.current = setTimeout(() => {
       idxRef.current = newIdx;
       setIdx(newIdx);
-      setVisible(true);
       fadingRef.current = false;
     }, FADE_MS);
   }, []);
@@ -76,7 +93,7 @@ export const Gallery: React.FC = () => {
     if (intervalRef.current) clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
       fadeTo((idxRef.current + 1) % filteredLenRef.current);
-    }, INTERVAL_MS + FADE_MS * 2);
+    }, INTERVAL_MS + FADE_MS);
   }, [fadeTo]);
 
   // Mount: start auto-advance
@@ -94,7 +111,10 @@ export const Gallery: React.FC = () => {
     fadingRef.current = false;
     idxRef.current = 0;
     setIdx(0);
-    setVisible(true);
+    const first = filteredRef.current[0];
+    setSlotA(first);
+    setSlotB(first);
+    setActiveSlot('a');
     startInterval();
   }, [selected, startInterval]);
 
@@ -102,8 +122,6 @@ export const Gallery: React.FC = () => {
     fadeTo((idxRef.current + dir + filteredLenRef.current) % filteredLenRef.current);
     startInterval();
   };
-
-  const img = filtered[idx] ?? filtered[0];
 
   return (
     <section id="gallery" className="py-16 md:py-28 bg-sardinia-dark">
@@ -139,23 +157,38 @@ export const Gallery: React.FC = () => {
           className="relative overflow-hidden bg-black"
           style={{ height: 'clamp(320px,65vh,760px)' }}
         >
-          {img && (
-            <img
-              src={img.url}
-              alt={img.alt}
-              className="absolute inset-0 w-full h-full object-contain select-none"
-              style={{ opacity: visible ? 1 : 0, transition: `opacity ${FADE_MS}ms ease` }}
-              draggable={false}
-            />
-          )}
+          {/* Slot A */}
+          <img
+            src={slotA.url}
+            alt={slotA.alt}
+            className="absolute inset-0 w-full h-full object-contain select-none"
+            style={{
+              opacity: activeSlot === 'a' ? 1 : 0,
+              transition: `opacity ${FADE_MS}ms ease`,
+              zIndex: activeSlot === 'a' ? 2 : 1,
+            }}
+            draggable={false}
+          />
+          {/* Slot B */}
+          <img
+            src={slotB.url}
+            alt={slotB.alt}
+            className="absolute inset-0 w-full h-full object-contain select-none"
+            style={{
+              opacity: activeSlot === 'b' ? 1 : 0,
+              transition: `opacity ${FADE_MS}ms ease`,
+              zIndex: activeSlot === 'b' ? 2 : 1,
+            }}
+            draggable={false}
+          />
 
           {/* Counter */}
-          <div className="absolute bottom-8 left-8">
+          <div className="absolute bottom-8 left-8 z-10">
             <p className="text-white/40 text-[11px] tracking-widest uppercase">{idx + 1} / {filtered.length}</p>
           </div>
 
           {/* Progress bar */}
-          <div className="absolute bottom-0 left-0 right-0 h-px bg-white/15">
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-white/15 z-10">
             <div
               className="h-full bg-sardinia-accent"
               style={{
