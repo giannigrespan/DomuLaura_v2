@@ -55,6 +55,7 @@ export const Gallery: React.FC = () => {
   const fadingRef      = useRef(false);
   const fadeTimerRef   = useRef<ReturnType<typeof setTimeout> | null>(null);
   const intervalRef    = useRef<ReturnType<typeof setInterval> | null>(null);
+  const activeSlotRef  = useRef<'a' | 'b'>('a');
 
   const translateCat = (cat: string) =>
     cat === 'Tutte' ? t('gallery.categories.all') : t(CATEGORY_KEYS[cat] || cat);
@@ -68,17 +69,21 @@ export const Gallery: React.FC = () => {
     if (fadingRef.current) return;
     fadingRef.current = true;
 
-    const newImg = filteredRef.current[newIdx] ?? filteredRef.current[0];
+    const newImg    = filteredRef.current[newIdx] ?? filteredRef.current[0];
+    const curActive = activeSlotRef.current;
+    const nxtActive = curActive === 'a' ? 'b' : 'a';
 
-    // Load new image into the inactive slot, then make it active (crossfade)
-    setActiveSlot(prev => {
-      if (prev === 'a') {
-        setSlotB(newImg);
-        return 'b';
-      } else {
-        setSlotA(newImg);
-        return 'a';
-      }
+    // Step 1: put new image into the INACTIVE slot (still at opacity 0)
+    if (nxtActive === 'b') setSlotB(newImg);
+    else                   setSlotA(newImg);
+
+    // Step 2: after two rAF the browser has painted the inactive slot;
+    // now flip activeSlot so the CSS transition kicks in correctly
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        activeSlotRef.current = nxtActive;
+        setActiveSlot(nxtActive);
+      });
     });
 
     if (fadeTimerRef.current) clearTimeout(fadeTimerRef.current);
@@ -114,6 +119,7 @@ export const Gallery: React.FC = () => {
     const first = filteredRef.current[0];
     setSlotA(first);
     setSlotB(first);
+    activeSlotRef.current = 'a';
     setActiveSlot('a');
     startInterval();
   }, [selected, startInterval]);
