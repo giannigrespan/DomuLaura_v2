@@ -20,7 +20,7 @@ const GALLERY_IMAGES: GalleryImage[] = [
   { url: '/buone/vista alberi.jpg',                   alt: 'Vista degli alberi',            category: 'Esterni' },
   { url: '/buone/terrazzo 1 con tavola piena.png',    alt: 'Terrazzo coperto con tavolo',   category: 'Esterni' },
   // Cucina e Soggiorno
-  { url: '/buone/cucina da divano.jpg',               alt: 'Cucina e soggiorno open space', category: 'Cucina e Soggiorno' },
+  { url: '/buone/cucina da divano.jpeg',               alt: 'Cucina e soggiorno open space', category: 'Cucina e Soggiorno' },
   { url: '/buone/cucina da ingresso.png',             alt: "Cucina vista dall'ingresso",    category: 'Cucina e Soggiorno' },
   // Camere
   { url: '/buone/camera1 quadri.png',                 alt: 'Camera con quadri e trittico',  category: 'Camere' },
