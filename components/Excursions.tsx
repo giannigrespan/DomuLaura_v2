@@ -9,8 +9,7 @@ const EXCURSIONS: Excursion[] = [
   { translationKey: 'excursions.places.berchida',        image: '/berchida.jpg',      distance: '12 km', category: 'beaches',        duration: '18 min'   },
   { translationKey: 'excursions.places.calaBrandinchi',  image: '/Cala-Brandinchi.webp', distance: '14 km', category: 'beaches',    duration: '20 min'   },
   { translationKey: 'excursions.places.laCinta',         image: '/lacinta1.jpg',      distance: '10 km', category: 'beaches',        duration: '15 min'   },
-  { translationKey: 'excursions.places.nuragheLoelle',   image: '/loelle.jpg',        distance: '15 km', category: 'cultureHistory', duration: '20 min'   },
-  { translationKey: 'excursions.places.gorropu',         image: '/gorroppu.jpg',      distance: '60 km', category: 'activities',     duration: '1h 15min' },
+{ translationKey: 'excursions.places.gorropu',         image: '/gorroppu.jpg',      distance: '60 km', category: 'activities',     duration: '1h 15min' },
 ];
 
 export const Excursions: React.FC = () => {
