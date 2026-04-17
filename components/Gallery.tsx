@@ -24,7 +24,6 @@ const GALLERY_IMAGES: GalleryImage[] = [
   { url: '/buone/camera2 con quadro.webp',             alt: 'Camera con trittico marino',    category: 'Camere' },
   // Bagno
   { url: '/buone/Bagno collage.webp',                  alt: 'Bagno completo',                category: 'Bagno' },
-  { url: '/buone/pianta bagno.jpg',                    alt: 'Dettaglio bagno',               category: 'Bagno' },
 ];
 
 export const Gallery: React.FC = () => {
