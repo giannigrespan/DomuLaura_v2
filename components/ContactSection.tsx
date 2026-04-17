@@ -74,10 +74,11 @@ export const ContactSection: React.FC = () => {
                 <h4 className="text-sardinia-dark text-xs tracking-widest uppercase font-medium mb-5">Distanze chiave</h4>
                 <div className="space-y-3">
                   {[
-                    ['🏖', 'Cala Liberotto', '8 km'],
-                    ['✈️', 'Aeroporto Olbia', '65 km'],
-                    ['🏔', 'Gole di Gorropu', '40 km'],
-                    ['⛵', 'Porto di Arbatax', '25 km'],
+                    ['🏖', 'La Caletta, '5 min'],
+                    ['✈️', 'Aeroporto Olbia', '30 min'],
+                    ['🏔', 'Gole di Gorropu', '30 min'],
+                    ['🏖', 'San Teodoro', '20 min'],
+                    ['🏖', 'Porto Cervo', '60 min']
                   ].map(([icon, place, dist]) => (
                     <div key={place} className="flex justify-between items-center text-sm">
                       <span className="text-sardinia-muted">{icon} {place}</span>
