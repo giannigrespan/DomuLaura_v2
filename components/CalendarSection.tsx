@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 const GOOGLE_CALENDAR_ID = process.env.GOOGLE_CALENDAR_ID;
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 
-interface CalendarDay { date: Date; isOccupied: boolean; isCurrentMonth: boolean; }
+interface CalendarDay { date: Date; isOccupied: boolean; isCheckout: boolean; isCurrentMonth: boolean; }
 
 export const CalendarSection: React.FC = () => {
   const { t } = useTranslation();
@@ -49,6 +49,21 @@ export const CalendarSection: React.FC = () => {
       }
       const data = await resp.json();
       const events = data.items || [];
+
+      // Collect checkout dates (last occupied day of each event)
+      const checkoutDates = new Set<string>();
+      events.forEach((ev: any) => {
+        if (ev.start.date) {
+          // All-day events: end.date is exclusive, so checkout = end - 1 day
+          const d = new Date(ev.end.date);
+          d.setDate(d.getDate() - 1);
+          checkoutDates.add(formatLocalDate(d));
+        } else {
+          const e = ev.end.dateTime?.split('T')[0];
+          if (e) checkoutDates.add(e);
+        }
+      });
+
       const days: CalendarDay[] = [];
       const iter = new Date(startDate); iter.setHours(0,0,0,0);
       while (iter <= endDate) {
@@ -59,7 +74,7 @@ export const CalendarSection: React.FC = () => {
           const e = ev.end.date || ev.end.dateTime?.split('T')[0];
           return allDay ? ds >= s && ds < e : ds >= s && ds <= e;
         });
-        days.push({ date: new Date(iter), isOccupied: occ, isCurrentMonth: iter.getMonth() === month });
+        days.push({ date: new Date(iter), isOccupied: occ, isCheckout: checkoutDates.has(ds), isCurrentMonth: iter.getMonth() === month });
         iter.setDate(iter.getDate() + 1);
       }
       setCalendarDays(days);
@@ -88,7 +103,7 @@ export const CalendarSection: React.FC = () => {
             </h2>
             <p className="text-sardinia-muted text-sm leading-relaxed mb-10">{t('calendar.subtitle')}</p>
 
-            <div className="flex items-center gap-8 mb-8">
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 mb-8">
               <div className="flex items-center gap-3">
                 <div className="w-4 h-4 bg-sardinia-sea/15 border border-sardinia-sea/30" />
                 <span className="text-sardinia-dark text-xs tracking-wider uppercase">{t('calendar.available')}</span>
@@ -96,6 +111,10 @@ export const CalendarSection: React.FC = () => {
               <div className="flex items-center gap-3">
                 <div className="w-4 h-4 bg-sardinia-terra/15 border border-sardinia-terra/30" />
                 <span className="text-sardinia-dark text-xs tracking-wider uppercase">{t('calendar.occupied')}</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-4 h-4 border border-sardinia-sand/60" style={{ background: 'linear-gradient(to bottom right, rgba(196,98,45,0.18) 50%, rgba(26,74,92,0.12) 50%)' }} />
+                <span className="text-sardinia-dark text-xs tracking-wider uppercase">{t('calendar.checkout')}</span>
               </div>
             </div>
 
@@ -164,11 +183,16 @@ export const CalendarSection: React.FC = () => {
                         className={`
                           flex items-center justify-center text-sm font-light py-3 border-b border-r border-sardinia-sand/50
                           ${!day.isCurrentMonth ? 'opacity-30' : ''}
-                          ${day.isOccupied
-                            ? 'bg-sardinia-terra/10 text-sardinia-terra'
-                            : 'bg-sardinia-sea/8 text-sardinia-sea'
+                          ${day.isCheckout
+                            ? 'text-sardinia-muted'
+                            : day.isOccupied
+                              ? 'bg-sardinia-terra/10 text-sardinia-terra'
+                              : 'bg-sardinia-sea/8 text-sardinia-sea'
                           }
                         `}
+                        style={day.isCheckout ? {
+                          background: 'linear-gradient(to bottom right, rgba(196,98,45,0.18) 50%, rgba(26,74,92,0.12) 50%)'
+                        } : undefined}
                       >
                         {day.date.getDate()}
                       </div>

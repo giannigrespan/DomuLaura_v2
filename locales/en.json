@@ -136,6 +136,7 @@
     "subtitle": "Check availability and book your stay in Sardinia",
     "available": "Available",
     "occupied": "Occupied",
+    "checkout": "Check-out",
     "notConfigured": "Calendar not configured",
     "loading": "Loading...",
     "disclaimer": "* Availability updates in real time from Google Calendar",
