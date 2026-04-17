@@ -74,7 +74,7 @@ export const ContactSection: React.FC = () => {
                 <h4 className="text-sardinia-dark text-xs tracking-widest uppercase font-medium mb-5">Distanze chiave</h4>
                 <div className="space-y-3">
                   {[
-                    ['🏖', 'La Caletta, '5 min'],
+                    ['🏖', 'La Caletta', '5 min'],
                     ['✈️', 'Aeroporto Olbia', '30 min'],
                     ['🏔', 'Gole di Gorropu', '30 min'],
                     ['🏖', 'San Teodoro', '20 min'],

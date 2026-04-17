@@ -8,7 +8,6 @@ const CATEGORY_KEYS: Record<string, string> = {
   'Camere':             'gallery.categories.bedrooms',
   'Cucina e Soggiorno': 'gallery.categories.kitchenLiving',
   'Bagno':              'gallery.categories.bathroom',
-  'Dettagli':           'gallery.categories.details',
 };
 
 const GALLERY_IMAGES: GalleryImage[] = [
@@ -23,15 +22,9 @@ const GALLERY_IMAGES: GalleryImage[] = [
   // Camere
   { url: '/buone/camera1 quadri.webp',                 alt: 'Camera con quadri e trittico',  category: 'Camere' },
   { url: '/buone/camera2 con quadro.webp',             alt: 'Camera con trittico marino',    category: 'Camere' },
-  { url: '/buone/camera1 coralli.webp',                alt: 'Camera con quadri corallo',     category: 'Camere' },
   // Bagno
   { url: '/buone/Bagno collage.webp',                  alt: 'Bagno completo',                category: 'Bagno' },
   { url: '/buone/pianta bagno.jpg',                    alt: 'Dettaglio bagno',               category: 'Bagno' },
-  // Dettagli
-  { url: '/buone/7g.jpg',                              alt: 'Targa in ceramica sarda',       category: 'Dettagli' },
-  { url: '/buone/oggetti.jpg',                         alt: 'Oggetti decorativi',            category: 'Dettagli' },
-  { url: '/buone/plafoniera.jpg',                      alt: 'Plafoniera',                    category: 'Dettagli' },
-  { url: '/buone/specchio e plafoniera.jpg',           alt: 'Specchio e plafoniera',         category: 'Dettagli' },
 ];
 
 export const Gallery: React.FC = () => {
