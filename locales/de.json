@@ -66,11 +66,7 @@
     },
     "terrace": {
       "title": "Panoramaterrasse",
-      "description": "Geräumige Terrasse mit Blick auf die sardische Landschaft, ideal für Frühstück im Freien"
-    },
-    "heating": {
-      "title": "Heizung",
-      "description": "Heizsystem für kühle sardische Abende"
+      "description": "Geräumige Terrasse, ideal für Frühstück im Freien"
     },
     "linens": {
       "title": "Bettwäsche inklusive",
@@ -185,7 +181,7 @@
     "address": "Adresse",
     "addressValue": "Via Lombardia 7a, 08020 Torpè (NU), Sardinien",
     "email": "E-Mail",
-    "emailValue": "info@domularura.it",
+    "emailValue": "torpe.holidayhome@gmail.com",
     "whereWeAre": "Wo wir sind",
     "formTitle": "Buchungsanfrage",
     "formSuccessTitle": "Nachricht gesendet!",

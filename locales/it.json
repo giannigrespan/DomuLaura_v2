@@ -66,11 +66,7 @@
     },
     "terrace": {
       "title": "Terrazzo Panoramico",
-      "description": "Ampio terrazzo con vista sulla campagna sarda, ideale per colazioni all'aperto"
-    },
-    "heating": {
-      "title": "Riscaldamento",
-      "description": "Sistema di riscaldamento per le fresche serate sarde"
+      "description": "Ampio terrazzo ideale per colazioni all'aperto"
     },
     "linens": {
       "title": "Biancheria Inclusa",
@@ -185,7 +181,7 @@
     "address": "Indirizzo",
     "addressValue": "Via Lombardia 7a, 08020 Torpè (NU), Sardegna",
     "email": "Email",
-    "emailValue": "info@domularura.it",
+    "emailValue": "torpe.holidayhome@gmail.com",
     "whereWeAre": "Dove siamo",
     "formTitle": "Richiesta di prenotazione",
     "formSuccessTitle": "Messaggio inviato!",
