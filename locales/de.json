@@ -3,6 +3,7 @@
     "home": "Start",
     "apartment": "Die Wohnung",
     "gallery": "Galerie",
+    "zona": "Die Region",
     "excursions": "Ausflüge",
     "availability": "Verfügbarkeit",
     "assistant": "Assistent",
@@ -82,6 +83,44 @@
       "kitchenLiving": "Küche & Wohnzimmer",
       "bathroom": "Bad",
       "details": "Details"
+    }
+  },
+  "zona": {
+    "label": "Das Gebiet",
+    "title": "Posada · Siniscola",
+    "titleAccent": "und Umgebung",
+    "description": "Die Küste von Posada und Siniscola ist eines der wertvollsten Naturgebiete Sardiniens, geschützt durch das UNESCO-Biosphärenreservat 'Tepilora, Rio Posada e Montalbo'. Wilde Strände, weiße Sanddünen und kristallklares Wasser nur wenige Minuten von Torpè entfernt.",
+    "unescoLabel": "UNESCO-Biosphärenreservat",
+    "statBeaches": "Strände in der Region",
+    "statCoast": "km Küstenlinie",
+    "statUnescoShort": "UNESCO",
+    "poweredBy": "Strandinformationen:",
+    "cta": "Gesamtes Gebiet erkunden",
+    "beaches": {
+      "laCaletta": {
+        "name": "La Caletta",
+        "description": "Der nächste Strand, nur 3 km entfernt. Goldener Sand, ruhiges Wasser und Einrichtungen. Ideal für Familien."
+      },
+      "berchida": {
+        "name": "Berchida",
+        "description": "Wilder Strand mit weißen Sanddünen und mediterranem Macchia. Außerhalb der Saison fast verlassen."
+      },
+      "capoComino": {
+        "name": "Capo Comino",
+        "description": "Ein Strand von außerordentlicher Schönheit mit Seepinien bis ans Ufer und türkisblauem Meer."
+      },
+      "sanGiovanni": {
+        "name": "San Giovanni di Posada",
+        "description": "Eine geschützte Bucht mit seichtem Wasser, ideal zum Schnorcheln und sicheren Schwimmen."
+      },
+      "calaBrandinchi": {
+        "name": "Cala Brandinchi",
+        "description": "Das 'sardische Tahiti' – azurblaues Wasser und strahlend weißer Sand. Einer der schönsten Strände Sardiniens."
+      },
+      "laCinta": {
+        "name": "Strand La Cinta",
+        "description": "Langer Sandstreifen nahe San Teodoro, ideal zum Kitesurfen und für Abendspaziergänge."
+      }
     }
   },
   "excursions": {

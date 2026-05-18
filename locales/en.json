@@ -3,6 +3,7 @@
     "home": "Home",
     "apartment": "The Apartment",
     "gallery": "Gallery",
+    "zona": "The Area",
     "excursions": "Excursions",
     "availability": "Availability",
     "assistant": "Assistant",
@@ -82,6 +83,44 @@
       "kitchenLiving": "Kitchen & Living",
       "bathroom": "Bathroom",
       "details": "Details"
+    }
+  },
+  "zona": {
+    "label": "The territory",
+    "title": "Posada · Siniscola",
+    "titleAccent": "and surroundings",
+    "description": "The Posada and Siniscola coastline is one of Sardinia's most prized natural areas, protected by the UNESCO Biosphere Reserve 'Tepilora, Rio Posada e Montalbo'. Wild beaches, white sand dunes and crystal-clear waters just minutes from Torpè.",
+    "unescoLabel": "UNESCO Biosphere Reserve",
+    "statBeaches": "beaches in the area",
+    "statCoast": "km of coastline",
+    "statUnescoShort": "UNESCO",
+    "poweredBy": "Beach information:",
+    "cta": "Explore the whole area",
+    "beaches": {
+      "laCaletta": {
+        "name": "La Caletta",
+        "description": "The nearest beach, just 3 km away. Golden sand, calm waters and facilities. Perfect for families."
+      },
+      "berchida": {
+        "name": "Berchida",
+        "description": "A wild beach with white sand dunes and Mediterranean scrub. Nearly deserted out of season."
+      },
+      "capoComino": {
+        "name": "Capo Comino",
+        "description": "A beach of extraordinary beauty with maritime pines reaching down to the shore and turquoise sea."
+      },
+      "sanGiovanni": {
+        "name": "San Giovanni di Posada",
+        "description": "A sheltered bay with shallow waters, ideal for snorkelling and safe swimming."
+      },
+      "calaBrandinchi": {
+        "name": "Cala Brandinchi",
+        "description": "The 'Sardinian Tahiti' for its azure waters and brilliant white sand. One of Sardinia's most beautiful beaches."
+      },
+      "laCinta": {
+        "name": "La Cinta Beach",
+        "description": "A long sandy strip near San Teodoro, perfect for kitesurfing and sunset walks."
+      }
     }
   },
   "excursions": {

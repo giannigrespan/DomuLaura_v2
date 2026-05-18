@@ -3,6 +3,7 @@
     "home": "Home",
     "apartment": "L'Appartamento",
     "gallery": "Galleria",
+    "zona": "La Zona",
     "excursions": "Escursioni",
     "availability": "Disponibilità",
     "assistant": "Assistente",
@@ -82,6 +83,44 @@
       "kitchenLiving": "Cucina e Soggiorno",
       "bathroom": "Bagno",
       "details": "Dettagli"
+    }
+  },
+  "zona": {
+    "label": "Il territorio",
+    "title": "Posada · Siniscola",
+    "titleAccent": "e dintorni",
+    "description": "La costa di Posada e Siniscola è una delle aree naturalistiche più pregiate della Sardegna, tutelata dalla Riserva di Biosfera UNESCO 'Tepilora, Rio Posada e Montalbo'. Spiagge selvagge, dune di sabbia bianca e acque cristalline a pochi minuti da Torpè.",
+    "unescoLabel": "Riserva di Biosfera UNESCO",
+    "statBeaches": "spiagge nella zona",
+    "statCoast": "km di costa",
+    "statUnescoShort": "UNESCO",
+    "poweredBy": "Informazioni sulle spiagge:",
+    "cta": "Esplora tutta la zona",
+    "beaches": {
+      "laCaletta": {
+        "name": "La Caletta",
+        "description": "La spiaggia più vicina, a soli 3 km. Sabbia dorata, acque calme e servizi. Perfetta per le famiglie."
+      },
+      "berchida": {
+        "name": "Berchida",
+        "description": "Spiaggia selvaggia con dune di sabbia bianca e macchia mediterranea. Quasi deserta fuori stagione."
+      },
+      "capoComino": {
+        "name": "Capo Comino",
+        "description": "Spiaggia di straordinaria bellezza con pini marittimi che arrivano fino alla riva e mare turchese."
+      },
+      "sanGiovanni": {
+        "name": "San Giovanni di Posada",
+        "description": "Baia riparata con fondali bassi, ideale per snorkeling e bagni in sicurezza."
+      },
+      "calaBrandinchi": {
+        "name": "Cala Brandinchi",
+        "description": "La 'Tahiti sarda' per le acque azzurre e la sabbia bianchissima. Una delle spiagge più belle della Sardegna."
+      },
+      "laCinta": {
+        "name": "Spiaggia della Cinta",
+        "description": "Lungo cordone sabbioso vicino a San Teodoro, perfetto per kitesurf e passeggiate al tramonto."
+      }
     }
   },
   "excursions": {
