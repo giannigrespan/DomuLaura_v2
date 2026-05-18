@@ -11,7 +11,7 @@ interface Beach {
 const BEACHES: Beach[] = [
   { key: 'laCaletta',     image: '/spiaggia_la_caletta_siniscola.jpg',    distance: '3 km',  isolaMeaUrl: 'https://www.isolamea.it/spiaggia/la-caletta/' },
   { key: 'berchida',      image: '/berchida.jpg',                          distance: '12 km', isolaMeaUrl: 'https://www.isolamea.it/spiaggia/berchida/' },
-  { key: 'capoComino',    image: null,                                      distance: '10 km', isolaMeaUrl: 'https://www.isolamea.it/spiaggia/capo-comino/' },
+  { key: 'capoComino',    image: '/capocomino.jpg',                          distance: '10 km', isolaMeaUrl: 'https://www.isolamea.it/spiaggia/capo-comino/' },
   { key: 'sanGiovanni',   image: '/slide1.jpg',                             distance: '6 km',  isolaMeaUrl: 'https://www.isolamea.it/spiaggia/san-giovanni-di-posada/' },
   { key: 'calaBrandinchi',image: '/spiaggia-cala-brandinchi-panoramica.webp', distance: '14 km', isolaMeaUrl: 'https://www.isolamea.it/spiaggia/cala-brandinchi/' },
   { key: 'laCinta',       image: '/lacinta1.jpg',                           distance: '10 km', isolaMeaUrl: 'https://www.isolamea.it/spiaggia/spiaggia-della-cinta-san-teodoro/' },
